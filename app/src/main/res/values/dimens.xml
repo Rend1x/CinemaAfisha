@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_recy">16dp</dimen>
+    <dimen name="image_width">300dp</dimen>
+    <dimen name="image_height">300dp</dimen>
+    <dimen name="margin_end_main">8dp</dimen>
+    <dimen name="margin_bottom_main">8dp</dimen>
+    <dimen name="progress_bar_width">125dp</dimen>
+    <dimen name="margin_start_detail">8dp</dimen>
+    <dimen name="margin_top_detail">8dp</dimen>
+    <dimen name="margin_end_detail">8dp</dimen>
+    <dimen name="image_width_detail">300dp</dimen>
+    <dimen name="image_heigth_detail">300dp</dimen>
+    <dimen name="margin_bottom_detail">8dp</dimen>
+</resources>

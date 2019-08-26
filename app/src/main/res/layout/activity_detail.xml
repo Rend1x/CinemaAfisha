@@ -8,10 +8,10 @@
 
     <ProgressBar
         android:id="@+id/detail_progress_bar"
-        android:layout_width="125dp"
+        android:layout_width="@dimen/progress_bar_width"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="@dimen/margin_end_detail"
+        android:layout_marginBottom="@dimen/margin_bottom_detail"
         android:gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,11 +20,11 @@
 
     <ImageView
         android:id="@+id/detail_image"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="@dimen/image_width_detail"
+        android:layout_height="@dimen/image_heigth_detail"
+        android:layout_marginStart="@dimen/margin_start_detail"
+        android:layout_marginTop="@dimen/margin_top_detail"
+        android:layout_marginEnd="@dimen/margin_end_detail"
         android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

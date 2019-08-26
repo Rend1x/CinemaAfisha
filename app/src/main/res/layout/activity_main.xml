@@ -8,10 +8,10 @@
 
     <ProgressBar
         android:id="@+id/progress_bar"
-        android:layout_width="125dp"
+        android:layout_width="@dimen/progress_bar_width"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="@dimen/margin_end_main"
+        android:layout_marginBottom="@dimen/margin_bottom_main"
         android:gravity="center_horizontal"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/recycler_view"
