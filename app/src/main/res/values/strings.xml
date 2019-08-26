@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CinemaAfisha</string>
+    <string name="error_message">Ой... Что-то пошло не так. Проверь интернет соединение и попробуй сново!!!</string>
+</resources>
