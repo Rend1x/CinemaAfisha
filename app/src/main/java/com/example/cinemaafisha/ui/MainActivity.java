@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
+import com.example.cinemaafisha.adapter.ClickListener;
 import com.example.cinemaafisha.helper.MyApplication;
 import com.example.cinemaafisha.R;
 import com.example.cinemaafisha.adapter.RecyclerViewAdapter;
@@ -31,7 +32,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 
-public class MainActivity extends MvpAppCompatActivity implements RecyclerViewAdapter.ClickListener, MainView {
+public class MainActivity extends MvpAppCompatActivity implements ClickListener, MainView {
 
     private RecyclerView mRecyclerView;
     private ProgressBar mProgressBar;

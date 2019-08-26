@@ -1,6 +1,7 @@
 package com.example.cinemaafisha.di.module;
 
 
+import com.example.cinemaafisha.adapter.ClickListener;
 import com.example.cinemaafisha.adapter.RecyclerViewAdapter;
 import com.example.cinemaafisha.di.scopes.ActivityScope;
 import com.example.cinemaafisha.ui.MainActivity;
@@ -13,13 +14,13 @@ public class AdapterModule {
 
     @Provides
     @ActivityScope
-    public RecyclerViewAdapter getStarWarsPeopleLIst(RecyclerViewAdapter.ClickListener clickListener) {
+    public RecyclerViewAdapter getFilmLIst(ClickListener clickListener) {
         return new RecyclerViewAdapter(clickListener);
     }
 
     @Provides
     @ActivityScope
-    public RecyclerViewAdapter.ClickListener getClickListener(MainActivity mainActivity) {
+    public ClickListener getClickListener(MainActivity mainActivity) {
         return mainActivity;
     }
 }

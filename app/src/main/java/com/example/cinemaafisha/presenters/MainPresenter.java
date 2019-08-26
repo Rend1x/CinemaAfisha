@@ -11,6 +11,8 @@ import com.example.cinemaafisha.views.MainView;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.observers.DisposableObserver;
@@ -18,6 +20,9 @@ import io.reactivex.schedulers.Schedulers;
 
 @InjectViewState
 public class MainPresenter extends MvpPresenter<MainView> {
+
+    @Inject
+    MyAPI myAPI;
 
     public void loadFilms(MyAPI apiInterface) {
 
