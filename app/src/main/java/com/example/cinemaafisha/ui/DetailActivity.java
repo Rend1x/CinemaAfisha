@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
 import com.example.cinemaafisha.R;
+import com.example.cinemaafisha.pojo.Films;
 import com.example.cinemaafisha.presenters.DetailPresenter;
 import com.example.cinemaafisha.views.DetailView;
 import com.squareup.picasso.Picasso;
@@ -56,15 +57,13 @@ public class DetailActivity extends MvpAppCompatActivity implements DetailView {
 
     @Override
     public void showFilm() {
-        String title = getIntent().getStringExtra("title");
-        String path = getIntent().getStringExtra("path");
-        String overview = getIntent().getStringExtra("overview");
+        Films films = getIntent().getParcelableExtra("Films");
         Picasso.with(this)
-                .load(BASE_URL_IMAGE + path)
+                .load(BASE_URL_IMAGE + films.posterPath)
                 .placeholder(R.drawable.ic_photo_black_24dp)
                 .into(mImageView);
 
-        mTitle.setText(title);
-        mOverview.setText(overview);
+        mTitle.setText(films.title);
+        mOverview.setText(films.overview);
     }
 }

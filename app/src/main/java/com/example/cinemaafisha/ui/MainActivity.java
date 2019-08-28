@@ -26,11 +26,9 @@ import com.example.cinemaafisha.presenters.MainPresenter;
 import com.example.cinemaafisha.retrofit.MyAPI;
 import com.example.cinemaafisha.views.MainView;
 
-
 import java.util.List;
 
 import javax.inject.Inject;
-
 
 public class MainActivity extends MvpAppCompatActivity implements ClickListener, MainView {
 
@@ -80,9 +78,7 @@ public class MainActivity extends MvpAppCompatActivity implements ClickListener,
     @Override
     public void launchIntent(String title, String path, String overview) {
         startActivity(new Intent(mActivityContext, DetailActivity.class)
-                .putExtra("title", title)
-                .putExtra("path", path)
-                .putExtra("overview", overview));
+                .putExtra("Films", new Films(path, title, overview)));
     }
 
     @Override
